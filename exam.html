@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link rel="stylesheet" href="exam.css">
+    <style>
+        /* Styling for the team member container */
+        .team-member {
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out; /* Smooth zoom transition */
+        }
+
+        /* Hover effect for team member */
+        .team-member:hover {
+            transform: scale(1.05); 
+        }
+
+        .team-member figcaption {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out; /* Smooth fade-in effect */
+        }
+
+        /* Show figcaption on hover */
+        .team-member:hover figcaption {
+            display: block;
+            opacity: 1;
+        }
+
+        /* Hover effect for the social icons */
+        .social-icon {
+            width: 30px;
+            margin: 0 5px;
+            opacity: 0.7;
+            transition: opacity cubic-bezier(0.39, 0.575, 0.565, 1) ease-in-out; /* Smooth fade-in effect */
+        }
+
+        .team-member:hover .social-icon {
+            opacity: 1;
+        }
+
+        .team-member a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .team-member:hover a {
+            color: #0056b3; 
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .team-header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .team-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="team-page">
+    <table class="team-table" align="center">
+        <thead>
+            <tr>
+                <td colspan="10" class="team-header">
+                    <h2>Our Team</h2>
+                    <p>The goal of our team is to create a website that introduces coffee shops with 100% reviews and helps people find quality, affordable coffee with a great ambiance.</p>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="home-page.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="aboutusnew.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="exam.html" class="nav-link">Team</a></li>
+                <li class="nav-item"><a href="coffee-shops-and-menu.html" class="nav-link">View Coffee Shops</a></li>
+            </ul>
+        </nav>
+            <tr>
+                <td align="center" class="team-member">
+                    <a href="kirzs-resume.html">
+                        <img src="images/kirztyn (1).jpg" alt="Kirz" class="team-img">
+                    </a>
+                    <figcaption>
+                        <h3><b>Programmer</b></h3>
+                        <p>A responsible, multi-tasking, and good leader. She has learned different languages suitable for our project.</p>
+                        <a href="facebook.com/kirztyn.delemon/">
+                            <img src="images/facebook.svg" alt="fb" class="social-icon">
+                        </a>
+                        <a href="https://www.instagram.com/stfu.kirz/">
+                            <img src="images/ig.jfif" alt="ig" class="social-icon">
+                        </a>
+                        <a href="mailto:kirztyn0405@gmail.com">
+                            <img src="images/gmail.svg" alt="gmail" class="social-icon">
+                        </a>
+                    </figcaption>
+                </td>
+
+                <td align="center" class="team-member">
+                    <a href="pats-resume.html">
+                        <img src="images/pat.png" alt="Pat" class="team-img">
+                    </a>
+                    <figcaption>
+                        <h3><b>Designer</b></h3>
+                        <p>A designer who uses her creativity to beautify the website.</p>
+                        <a href="facebook.com/patricia.fermanes/">
+                            <img src="images/facebook.svg" alt="fb" class="social-icon">
+                        </a>
+                        <a href="Instagram.com/patricia.fermanes/">
+                            <img src="images/ig.jfif" alt="ig" class="social-icon">
+                        </a>
+                        <a href="mailto:patf@gmail.com">
+                            <img src="images/gmail.svg" alt="gmail" class="social-icon">
+                        </a>
+                    </figcaption>
+                </td>
+
+                <td align="center" class="team-member">
+                    <a href="michs-resume.html">
+                        <img src="images/michelle.jpg" alt="Michelle" class="team-img">
+                    </a>
+                    <figcaption>
+                        <h3><b>Content Writer</b></h3>
+                        <p>Passionate about writing content for the website.</p>
+                        <a href="facebook.com/Michelle.Pedrosa/">
+                            <img src="images/facebook.svg" alt="fb" class="social-icon">
+                        </a>
+                        <a href="Instagram.com/michelle.Pedrosa/">
+                            <img src="images/ig.jfif" alt="ig" class="social-icon">
+                        </a>
+                        <a href="mailto:mich@gmail.com">
+                            <img src="images/gmail.svg" alt="gmail" class="social-icon">
+                        </a>
+                    </figcaption>
+                </td>
+
+                <td align="center" class="team-member">
+                    <a href="yuris-resume.html">
+                        <img src="images/Yhurimei.jpg" alt="Yuri" class="team-img">
+                    </a>
+                    <figcaption>
+                        <h3><b>Designer</b></h3>
+                        <p>Passionate and full of ideas when it comes to organizing and creating webpages.</p>
+                        <a href="facebook.com/Yhurimei.Bascos/">
+                            <img src="images/facebook.svg" alt="fb" class="social-icon">
+                        </a>
+                        <a href="Instagram.com/yhurimei.bascos/">
+                            <img src="images/ig.jfif" alt="ig" class="social-icon">
+                        </a>
+                        <a href="mailto:yjbascos@gmail.com">
+                            <img src="images/gmail.svg" alt="gmail" class="social-icon">
+                        </a>
+                    </figcaption>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const teamMembers = document.querySelectorAll('.team-member');
+            
+            // Toggle visibility of team member details
+            teamMembers.forEach(member => {
+                member.addEventListener('click', function() {
+                    const figcaption = this.querySelector('figcaption');
+                    if (figcaption) {
+                        figcaption.classList.toggle('show'); // Show or hide the details
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blk 3 Cafe Menu</title>
+    <link rel="stylesheet" href="blk.css">
+    <script>
+        // Function to toggle visibility of cafe description
+        function toggleDescription() {
+            var description = document.getElementById("description");
+            if (description.style.display === "none" || description.style.display === "") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+
+        // Function to navigate to the main page
+        function goToMain() {
+            window.location.href = "CoffeeShopsAndMenu.html"; // Navigate to the main page
+        }
+    </script>
+</head>
+<body>
+    <h1>BLK 3 CAFE - CALAMBA</h1>
+    
+    <p id="description">Blk 3 Cafe is a unique and quirky cafe with a playful and inviting atmosphere. The cafe's exterior features a charming wooden structure adorned with three stop signs, each with a playful twist: "Stop," "Look," and "Have a Sip!" This whimsical touch reflects the cafe's lighthearted and welcoming vibe, inviting customers to relax and enjoy a delicious beverage or snack.</p>
+
+    <div>
+        <a href="https://www.google.com/maps/place/Blk+3+Cafe+-+Calamba/@14.1941747,121.155056,17z/data=!3m1!4b1!4m6!3m5!1s0x33bd638e9c11901f:0xa4b24259af8fce92!8m2!3d14.1941747!4d121.1576309!16s%2Fg%2F11q2tjg94d?entry=ttu&g_ep=EgoyMDI0MTAxNC4wIKXMDSoASAFQAw%3D%3D" class="location-button">Location</a>
+    </div>
+    
+    <div class="video">
+        <video src="vid/blk3.mp4" controls autoplay loop muted></video>
+    </div>
+    <!-- Image Gallery -->
+    <div class="image-gallery">
+        <img src="images/blk/blk 3.jpg" alt="Blk 3 Cafe Interior">
+        <img src="images/blk/blk 4.jpg" alt="Blk 3 Cafe Menu">
+        <img src="images/blk/blk 5.jpg" alt="Blk 3 Cafe Coffee">
+        <img src="images/blk/blk6.jpg" alt="Blk 3 Cafe Exterior">
+        <img src="images/blk/blk7.jpg" alt="Blk 3 Cafe Vibe">
+    </div>
+
+
+
+
+    <nav>
+        <a href="home.html">Home</a>
+    </nav>
+</body>
+</html>

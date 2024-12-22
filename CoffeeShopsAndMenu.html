@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Stars Cafe in Calamba</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Lexend+Zetta:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../assets/stylesheet/coffee-shop.css">
+    <script src="https://kit.fontawesome.com/815328eaef.js" crossorigin="anonymous"></script>
+    <style>
+
+    .list-item {
+        display: flex; 
+        flex-direction: row;
+        width: 100%;
+        height: 300px; 
+        gap: 40px;
+
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    .left-box {
+        flex: 1; 
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .right-box {
+        flex: 2; 
+        background-color: whitesmoke;
+        border-radius: 12px;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+
+    .cafe-image{
+        background-color: rgb(58, 37, 37);
+        padding: 8px;
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .cafe-image:hover{
+        transform: scale(1.02);
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>5 Stars Cafe in Calamba</h2>
+        <p class="description">Discover the best-rated cafes here in Calamba, where each coffee shop brings a unique blend of flavors, ambiance, and quality service. These five shops are frequently visited by customers because of their excellent offerings.</p>
+        <ul>
+            <li class="list-item">
+                <div class="left-box">
+                    <div class="cafe-image">
+                        <a href="isa.html">
+                            <img src="../assets/pictures/bfc/bfc.jpg" alt="But First, Coffee, Calamba pic">
+                        </a>
+                    </div>
+                </div>
+                <div class="right-box">
+                    <p>
+                        But First, Coffee is more than just a coffee shop; it's a haven <br>for coffee lovers seeking a cozy atmosphere and a delicious cup of joe. <br> They're known for their commitment to quality, using carefully sourced and <br>roasted beans to create rich, flavorful brews that satisfy even the most discerning palate.
+                    </p>
+        
+                    <div style="display: flex; flex-direction: row; gap: 10px;">
+
+                        <nav>
+                            <a class="menu-text" href="../public/BFC-Menu.html">
+                                Menu
+                            </a>
+                        </nav>
+
+                        <button onclick="window.open('https://www.facebook.com/butfirstcoffeecalamba', '_blank')">
+                            <i class="fa-brands fa-facebook"></i>
+                        </button>
+
+                        <button onclick="window.open('https://maps.app.goo.gl/Tp5M39hr1NZbS5Ni8', '_blank')">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </button>
+
+                    </div>
+                </div>
+            </li>
+        
+            <!-- Old Coast Cafe -->
+            <li class="list-item">
+                <div class="left-box">
+                    <div class="cafe-image">
+                        <a href="isa.html">
+                            <img src="../assets/pictures/old-coast/oc.webp" alt="Old Coast, Calamba pic">
+                        </a>
+                    </div>
+                </div>
+                <div class="right-box">
+                    <p>
+                        Old Coast Cafe is a charming and inviting spot known <br> for its cozy atmosphere and delicious coffee. With a focus on quality ingredients <br> and a relaxed vibe, Old Coast offers a perfect escape from the hustle and bustle.
+                    </p>
+                    <div style="display: flex; flex-direction: row; gap: 10px;">
+
+                        <nav>
+                            <a class="menu-text" href="../public/OldCoastMenu.html">
+                                Menu
+                            </a>
+                        </nav>
+
+                        <button onclick="window.open('https://www.facebook.com/oldcoast.cafe', '_blank')">
+                            <i class="fa-brands fa-facebook"></i>
+                        </button>
+
+                        <button onclick="window.open('https://maps.app.goo.gl/nE7KVKPWajPa3vU18', '_blank')">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </button>
+                        
+                    </div>
+                </div>
+            </li>
+        
+            <!-- Krāv Cafe -->
+            <li class="list-item">
+                <div class="left-box">
+                    <div class="cafe-image">
+                        <a href="isa.html">
+                            <img src="../assets/pictures/krav/krav.webp" alt="Krav Cafe, Calamba pic">
+                        </a>
+                    </div>
+                </div>
+                <div class="right-box">
+                    <p>
+                        Krāv Cafe is known for its bold flavors, creative menu, <br> and lively atmosphere. Krav Cafe is the perfect place to fuel up with <br> a delicious coffee or enjoy a satisfying meal.
+                    </p>
+                    <div style="display: flex; flex-direction: row; gap: 10px;">
+
+                        <nav>
+                            <a class="menu-text" href="../public/KravKafeMenu.html">
+                                Menu
+                            </a>
+                        </nav>
+
+                        <button onclick="window.open('https://www.facebook.com/kravcafecalamba?mibextid=LVqgqoT8rQke8goU', '_blank')">
+                            <i class="fa-brands fa-facebook"></i>
+                        </button>
+
+                        <button onclick="window.open('https://maps.app.goo.gl/rXwYzeSA8usTGQyw6', '_blank')">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </button>
+                        
+                    </div>
+                </div>
+            </li>
+        
+            <!-- The Sifted Cafe -->
+            <li class="list-item">
+                <div class="left-box">
+                    <div class="cafe-image">
+                        <a href="isa.html">
+                            <img src="../assets/pictures/the-sifted/the-sifted.webp" alt="The Sifted pic">
+                        </a>
+                    </div>
+                </div>
+                <div class="right-box">
+                    <p>
+                        The Sifted Cafe is a bright and airy cafe with a modern, <br> minimalist aesthetic. The cafe's minimalist design and bright colors create a <br> welcoming and inviting atmosphere, perfect for relaxing.
+                    </p>
+                    <div style="display: flex; flex-direction: row; gap: 10px;">
+
+                        <nav>
+                            <a class="menu-text" href="../public/the_sifted_menu.html">
+                                Menu
+                            </a>
+                        </nav>
+
+                        <button onclick="window.open('https://www.facebook.com/TheSiftedCafe', '_blank')">
+                            <i class="fa-brands fa-facebook"></i>
+                        </button>
+
+                        <button onclick="window.open('https://maps.app.goo.gl/L9MMmn4ukr3VNLHQ8', '_blank')">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </button>
+                        
+                    </div>
+                </div>
+            </li>
+        
+            <!-- Blk 3 Cafe -->
+            <li class="list-item">
+                <div class="left-box">
+                    <div class="cafe-image">
+                        <a href="isa.html">
+                            <img src="../assets/pictures/blk/blk.webp" alt="Blk 3 Cafe pic">
+                        </a>
+                    </div>
+                </div>
+                <div class="right-box">
+                    <p>
+                        Blk 3 Cafe is a unique and quirky cafe with a playful and <br> inviting atmosphere. The cafe's structure reflects its lighthearted and <br> welcoming vibe, inviting customers to relax and enjoy a delicious beverage.
+                    </p>
+                    <div style="display: flex; flex-direction: row; gap: 10px;">
+
+                        <nav>
+                            <a class="menu-text" href="../public/blk_menu.html">
+                                Menu
+                            </a>
+                        </nav>
+
+                        <button onclick="window.open('https://www.facebook.com/SipAvenueCalamba', '_blank')">
+                            <i class="fa-brands fa-facebook"></i>
+                        </button>
+
+                        <button onclick="window.open('https://maps.app.goo.gl/8Afw7AsXEa1TN28J8', '_blank')">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </button>
+                        
+                    </div>
+                </div>
+            </li>
+        </ul>
+        
+        
+    </div>
+
+    <div class="content contacts" id="contacts">
+        <h2>Contacts</h2>
+        <p>If you'd like to know more or have any inquiries, feel free to reach out them via the contact information below:</p>
+        <div class="contact-container">
+            <div class="contact-card">
+                <p>But First, Coffee</p>
+                <ul>
+                   <li>Gmail: butfirstcoffeecalamba@gmail.com</li>
+                   <li>Contact no.: 0917-112-0590</li>
+                   <li>Facebook: But First, Coffee - Calamba</li>
+                   <li>Instagram: @butfirstcoffeecalambalaguna</li>
+                </ul>
+        </div>
+        <div class="contact-card">
+            <p>Old coast </p>
+            <ul>
+                <li>Gmail: info@oldcoastcafe.com</li>
+                <li>Contact no.: 0965 904 3887</li>
+                <li>Facebook: Old Coast Café Main</li>
+                <li>Instagram: oldcoast.cafe</li>
+            </ul>
+        </div>
+        <div class="contact-card">
+            <p>Krāv Cafe</p>
+            <ul>
+                <li>Gmail: kravcalamba@gmail.com</li>
+                <li>Facebook: Krāv Cafe - Calamba</li>
+            </ul>
+        </div>
+        <div class="contact-card">
+            <ul>
+                <p>The Sifted Cafe</p>
+                <li>Contact no.: 0916 390 7048</li>
+                <li>Facebook: The Sifted Cafe</li>
+            </ul>
+        </div>
+        <div class="contact-card">
+            <ul>
+                <p>Blk 3 Cafe</p>
+                <li>Facebook: Blk 3 Cafe</li>
+                <li>Instagram: blk3cafe</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 5 Stars Cafe in Calamba | All Rights Reserved</p>
+        <a href="home.html">Home</a>
+        <i class="fa-brands fa-facebook"></i>
+    </footer>
+</body>
+</html>                           

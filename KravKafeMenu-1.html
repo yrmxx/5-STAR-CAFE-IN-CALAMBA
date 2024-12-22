@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krav Cafe, Coffee Menu</title>
+    <link rel="stylesheet" href="krav.css">
+    <style>
+        /* Global Styles */
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: brown;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2em; /* Set font size for title */
+        }
+
+        p {
+            margin: 20px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Location Button Styles */
+        .location-btn {
+            position: absolute;
+            left: 20px;
+            top: 180px;
+            text-decoration: none;
+            background-color: brown;
+            color: white;
+            padding: 10px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .location-btn:hover {
+            background-color: #a0522d;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Back to Main Button Styles */
+        .back-to-main-btn {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: brown;
+            color: white;
+            padding: 15px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-main-btn:hover {
+            background-color: #a0522d;
+        }
+
+        /* Image Gallery */
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .image-gallery img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            font-size: 14px;
+            background-color: white;
+            color: black;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em; /* Adjust title font size */
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .location-btn {
+                left: 10px;
+                top: 220px;
+                font-size: 14px;
+                padding: 8px 20px;
+            }
+
+            .image-gallery img {
+                width: 250px;
+            }
+
+            .back-to-main-btn {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .location-btn {
+                left: 10px;
+                top: 260px;
+                font-size: 12px;
+                padding: 6px 15px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            .image-gallery img {
+                width: 200px;
+            }
+
+            .back-to-main-btn {
+                font-size: 12px;
+                padding: 8px 15px;
+            }
+
+            footer {
+                font-size: 10px;
+            }
+        }
+    </style>
+    <script>
+        // Function to navigate to the main page
+        function goToMain() {
+            window.location.href = "CoffeeShopsAndMenu.html"; 
+        }
+    </script>
+</head>
+<body>
+    <h1>Krav Cafe - Calamba</h1>
+    <p>
+        Krāv Cafe is known for its bold flavors, creative menu, and lively atmosphere. It's the perfect place to fuel up with a delicious coffee or enjoy a satisfying meal. With a focus on fresh ingredients and a commitment to quality, Krav Cafe offers a unique and memorable experience for every coffee and food lover.
+    </p>
+
+    <!-- Location Button -->
+    <a href="https://www.google.com/maps/place/Krav+Cafe+Calamba/@14.19591,121.1611299,17z/data=!3m1!4b1!4m6!3m5!1s0x33bd63001ed4111f:0x34316fbdac9968a2!8m2!3d14.19591!4d121.1637048!16s%2Fg%2F11vr_gdjhy?entry=ttu&g_ep=EgoyMDI0MTAxMy4wIKXMDSoASAFQAw%3D%3D" 
+       class="location-btn">Location</a>
+
+    <div class="video">
+        <video src="vid/krav cafe.mp4" controls autoplay loop muted></video>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="image-gallery">
+        <img src="images/krav/KRAV.MENU.jpg" alt="Krav Cafe Coffee Menu">
+        <img src="images/krav/KRAV. RICEBOWL.jpg" alt="Krav Cafe Coffee Drinks">
+        <img src="images/krav/KRAV.FOOD.jpg" alt="Krav Cafe Rice Bowl">
+        <img src="images/krav/KRAV. DRINKS.jpg" alt="Krav Cafe Food">
+    </div>
+
+    <!-- Back to Main Button -->
+    <button class="back-to-main-btn" onclick="goToMain()">Back to Main</button>
+
+
+
+    <nav style="background-color: #faf3e0; padding: 1rem 0; text-align: center;">
+        <a href="home.html" style="text-decoration: none; color: #333; font-weight: bold;">Home</a>
+    </nav>
+</body>
+</html>

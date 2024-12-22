@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RATINGS AND RECOMMENDATION</title>
+    <link rel="stylesheet" href="ratings.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Rate & Recommend</h1>
+
+        <div class="rating">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+
+        <div class="recommendation">
+            <p><strong>Would you recommend this to a friend?</strong></p>
+            <button class="recommend-button" id="yesButton">Yes</button>
+            <button class="recommend-button" id="noButton">No</button>
+        </div>
+
+        <p id="thankyouMessage" style="display: none; color: #333; font-size: 1.2em; font-weight: bold;">Thank you for your feedback!</p>
+
+        <nav>
+            <a href="coffee-shops-and-menu.html">Back</a>
+        </nav>
+    </div>
+
+    <script>
+        const stars = document.querySelectorAll('.star');
+        let selectedRating = 0;
+
+        function handleStarClick(event) {
+            const rating = parseInt(event.target.getAttribute('data-value'));
+            selectedRating = rating;
+
+            stars.forEach(star => {
+                if (parseInt(star.getAttribute('data-value')) <= selectedRating) {
+                    star.style.color = '#ffcc00'; 
+                } else {
+                    star.style.color = '#888'; 
+                }
+            });
+        }
+
+        stars.forEach(star => {
+            star.addEventListener('click', handleStarClick);
+        });
+
+        stars.forEach(star => {
+            star.addEventListener('mouseover', (event) => {
+                const rating = parseInt(event.target.getAttribute('data-value'));
+                stars.forEach(star => {
+                    if (parseInt(star.getAttribute('data-value')) <= rating) {
+                        star.style.color = '#ffcc00'; 
+                    } else {
+                        star.style.color = '#888';
+                    }
+                });
+            });
+
+            star.addEventListener('mouseout', () => {
+                stars.forEach(star => {
+                    if (parseInt(star.getAttribute('data-value')) <= selectedRating) {
+                        star.style.color = '#ffcc00';
+                    } else {
+                        star.style.color = '#888';
+                    }
+                });
+            });
+        });
+
+        function showThankYouMessage() {
+            const thankYouMessage = document.getElementById('thankyouMessage');
+            thankYouMessage.style.display = 'block'; // Show the message
+        }
+        document.getElementById('yesButton').addEventListener('click', showThankYouMessage);
+        document.getElementById('noButton').addEventListener('click', showThankYouMessage);
+    </script>
+</body>
+</html>

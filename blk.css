@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+footer i {
+    font-size: 20px;
+}
+
+nav {
+    text-align: center;
+    background-color: #333;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #444;
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.image-gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Video Styles */
+.video {
+    text-align: center;
+    margin-top: 20px;
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+/* Description */
+#description {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Location Button */
+.location-button {
+    display: inline-block;
+    background-color: #5A9F60;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.location-button:hover {
+    background-color: #4c8d4e;
+}
+
+/* Back to Main Button */
+.back-to-main-btn {
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.back-to-main-btn:hover {
+    background-color: #e64a19;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #description {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .image-gallery img {
+        max-width: 100%;
+    }
+
+    video {
+        max-width: 100%;
+    }
+
+    .location-button, .back-to-main-btn {
+        width: 80%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    .image-gallery img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    video {
+        max-width: 100%;
+    }
+
+    nav a {
+        padding: 10px 15px;
+    }
+
+    .location-button, .back-to-main-btn {
+        width: 90%;
+    }
+}

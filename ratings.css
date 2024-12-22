@@ -1,0 +1,122 @@
+/* ratings.css */
+
+/* General Body and Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Neutral white background */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333; /* Dark neutral text */
+}
+
+/* Rating Section */
+.rating {
+    margin: 20px 0;
+}
+
+.star {
+    font-size: 2em;
+    color: #888; /* Neutral gray for stars */
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+/* Recommendation Section */
+.recommendation {
+    margin: 20px 0;
+}
+
+.recommend-button {
+    background-color: #e0e0e0; /* Neutral gray background */
+    color: #333; /* Dark neutral text */
+    border: 1px solid #ccc; /* Neutral border */
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.recommend-button:hover {
+    background-color: #ccc; /* Slightly darker gray on hover */
+}
+
+/* Navigation */
+nav {
+    background-color: #fafafa; /* Light neutral background */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Neutral dark color for text */
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .star {
+        font-size: 1.5em;
+    }
+
+    .recommend-button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .star {
+        font-size: 1.2em;
+    }
+
+    .recommend-button {
+        font-size: 0.9em;
+        padding: 6px 12px;
+    }
+
+    nav a {
+        font-size: 0.9em;
+    }
+
+    .recommendation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recommend-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+

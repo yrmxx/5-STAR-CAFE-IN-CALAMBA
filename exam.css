@@ -1,0 +1,160 @@
+body.team-page {
+    background-color: rgb(157, 130, 117);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+table.team-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: separate;
+    overflow-x: auto; /* Make table scrollable on smaller screens */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Table header styling */
+.team-header h2 {
+    font-family: serif;
+    font-size: 24px;
+    color: #333;
+}
+
+.team-header p {
+    font-size: 16px;
+    color: #666;
+}
+
+.team-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    transition: width 0.3s ease, height 0.3s ease; /* Smooth transition for resizing */
+}
+
+.team-member {
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px;
+}
+
+.team-member a {
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: #333;
+}
+
+.team-member figcaption {
+    font-size: 14px;
+    color: #666;
+}
+
+.social-icon {
+    width: 30px;
+    margin: 0 5px;
+}
+
+/* Hover effects */
+.nav-link:hover, .team-member a:hover {
+    color: #007BFF;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Make navbar items stack vertically */
+    .nav-item {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .team-table {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    /* Adjust team member images for smaller screens */
+    .team-img {
+        width: 120px;
+        height: 120px; /* Resize images on smaller screens */
+    }
+
+    .team-member {
+        display: inline-block;
+        width: 100%; /* Make each team member take full width on small screens */
+        margin-bottom: 20px; /* Add spacing between team members */
+    }
+
+    .team-member figcaption {
+        display: block; /* Show team member details on mobile */
+        font-size: 12px;
+    }
+
+    .team-member a {
+        font-size: 18px; /* Reduce font size for links */
+    }
+
+    /* Adjust social media icons */
+    .social-icon {
+        width: 25px; /* Smaller icons on mobile */
+    }
+
+    /* Adjust header */
+    .team-header h2 {
+        font-size: 20px;
+    }
+
+    .team-header p {
+        font-size: 14px;
+    }
+}
+
+/* Further adjustment for extra small screens (like phones in portrait mode) */
+@media (max-width: 480px) {
+    .team-header h2 {
+        font-size: 18px;
+    }
+
+    .team-header p {
+        font-size: 12px;
+    }
+
+    .team-img {
+        width: 100px;
+        height: 100px; /* Even smaller images */
+    }
+
+    .team-member a {
+        font-size: 16px;
+    }
+
+    .social-icon {
+        width: 20px; /* Even smaller icons */
+    }
+}
+
